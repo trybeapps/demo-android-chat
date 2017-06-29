@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="viewModel"
+			type="io.rapid.rapichat.main.ChannelItemViewModel" />
+
+		<variable
+			name="listener"
+			type="io.rapid.rapichat.channel.ChannelListener" />
+	</data>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="?selectableItemBackground"
+		android:onClick="@{() -> listener.onChannelClicked(viewModel.doc.id)}">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@{`#` + viewModel.doc.id}"
+			android:padding="16dp"
+			app:show="@{!viewModel.unread}"
+			tools:text="Title" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@{`#` + viewModel.doc.id}"
+			android:padding="16dp"
+			android:textStyle="bold"
+			app:show="@{viewModel.unread}"
+			tools:text="Title" />
+	</LinearLayout>
+</layout>

@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">RapiChat</string>
+	<string name="open_channels">Open Channels</string>
+	<string name="close_channels">Close Channels</string>
+	<string name="message_hint">Type your message here…</string>
+	<string name="channel">Channels</string>
+	<string name="welcome">Welcome, %s!</string>
+</resources>
