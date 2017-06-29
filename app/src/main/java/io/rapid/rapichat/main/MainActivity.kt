@@ -17,7 +17,7 @@ class MainActivity : LifecycleAppCompatActivity(), ChannelListener {
     val viewModelBinding = ViewModelBinding<ActivityMainBinding, MainViewModel>(this, this, R.layout.activity_main, MainViewModel::class.java)
     private lateinit var drawerToggle: ActionBarDrawerToggle
     val channelItemBinding: ItemBinding<ChannelItemViewModel> = ItemBinding.of<ChannelItemViewModel>(BR.viewModel, R.layout.item_channel).bindExtra(BR.listener, this)
-    var lastChannel by stringPref("last_channel")
+    var lastChannel by stringPref("last_channel", "general")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +27,7 @@ class MainActivity : LifecycleAppCompatActivity(), ChannelListener {
         // setup toolbar and drawer
         setSupportActionBar(viewModelBinding.binding.toolbar)
         val icon = getCompatDrawable(R.drawable.ic_menu)
-        icon.setCompatTint(getCompatColor(R.color.colorAccent))
+        icon.setCompatTint(getCompatColor(R.color.text))
         supportActionBar?.setHomeAsUpIndicator(icon)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         drawerToggle = ActionBarDrawerToggle(this, viewModelBinding.binding.drawerLayout, R.string.open_channels, R.string.close_channels)

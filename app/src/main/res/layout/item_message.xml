@@ -25,6 +25,7 @@
 			tools:text="Message text right here. Right now." />
 
 		<LinearLayout
+			android:alpha="0.7"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
 
@@ -32,7 +33,8 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="@{item.body.senderName}"
-				android:textColor="@color/colorAccent"
+				android:textColor="@color/text"
+				android:fontFamily="sans-serif-condensed"
 				android:textAppearance="@style/TextAppearance.AppCompat.Caption"
 				tools:text="Sender Name" />
 
@@ -40,6 +42,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="8dp"
+				android:fontFamily="sans-serif-condensed"
 				android:textAppearance="@style/TextAppearance.AppCompat.Caption"
 				tools:text="3 minutes ago"
 				app:referenceTime="@{item.body.sentDate}" />

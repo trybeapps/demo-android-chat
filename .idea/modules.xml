@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/RapiChat.iml" filepath="$PROJECT_DIR$/RapiChat.iml" />
       <module fileurl="file://$PROJECT_DIR$/ViewModelTest.iml" filepath="$PROJECT_DIR$/ViewModelTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rapichat-android.iml" filepath="$PROJECT_DIR$/rapichat-android.iml" />
     </modules>
   </component>
 </project>
