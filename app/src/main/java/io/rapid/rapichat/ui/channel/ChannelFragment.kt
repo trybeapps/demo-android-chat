@@ -1,4 +1,4 @@
-package io.rapid.rapichat.channel
+package io.rapid.rapichat.ui.channel
 
 import android.arch.lifecycle.LifecycleFragment
 import android.arch.lifecycle.ViewModelProviders
@@ -10,7 +10,7 @@ import io.rapid.rapichat.BR
 import io.rapid.rapichat.R
 import io.rapid.rapichat.data.Message
 import io.rapid.rapichat.databinding.FragmentChannelBinding
-import io.rapid.rapichat.main.MainViewModel
+import io.rapid.rapichat.ui.main.MainViewModel
 import io.rapid.rapichat.utils.ViewModelBinding
 import me.tatarka.bindingcollectionadapter2.ItemBinding
 

@@ -1,4 +1,4 @@
-package io.rapid.rapichat.main
+package io.rapid.rapichat.ui.main
 
 import android.databinding.BaseObservable
 import android.databinding.Bindable
@@ -14,7 +14,7 @@ class ChannelItemViewModel(val doc: RapidDocument<Channel>) : BaseObservable() {
     @Bindable
     fun isUnread(): Boolean {
         val lastKnownMessageId by stringPref("last_message_${doc.id}")
-        return channel.lastMessage.id != lastKnownMessageId
+        return channel.lastMessage?.id != lastKnownMessageId
     }
 
     fun refreshUnread() {

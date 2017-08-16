@@ -1,4 +1,4 @@
-package io.rapid.rapichat.channel
+package io.rapid.rapichat.ui.channel
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
@@ -8,6 +8,7 @@ import android.databinding.ObservableField
 import io.rapid.RapidDocument
 import io.rapid.RapidMutateOptions
 import io.rapid.Sorting
+import io.rapid.lifecycle.RapidLiveData
 import io.rapid.rapichat.data.Channel
 import io.rapid.rapichat.data.LastMessage
 import io.rapid.rapichat.data.Message
@@ -40,12 +41,10 @@ class ChannelViewModel(application: Application) : AndroidViewModel(application)
     }
 
     fun observe(lifecycleOwner: LifecycleOwner) {
-
         var lastKnownMessageId by stringPref("last_message_$channelId")
-        RapidChat.MESSAGES
+        RapidLiveData.from(RapidChat.MESSAGES
                 .equalTo("channelId", channelId)
-                .orderBy("sentDate", Sorting.ASC)
-                .liveData
+                .orderBy("sentDate", Sorting.ASC))
                 .observe(lifecycleOwner, Observer {
                     messages.update(it)
                     if (messages.isNotEmpty())

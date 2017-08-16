@@ -13,5 +13,5 @@ data class LastMessage(
 )
 
 data class Channel(
-        val lastMessage: LastMessage
+        val lastMessage: LastMessage?
 )

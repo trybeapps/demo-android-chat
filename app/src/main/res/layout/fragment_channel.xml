@@ -5,11 +5,11 @@
 
 		<variable
 			name="viewModel"
-			type="io.rapid.rapichat.channel.ChannelViewModel" />
+			type="io.rapid.rapichat.ui.channel.ChannelViewModel" />
 
 		<variable
 			name="view"
-			type="io.rapid.rapichat.channel.ChannelFragment" />
+			type="io.rapid.rapichat.ui.channel.ChannelFragment" />
 	</data>
 
 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

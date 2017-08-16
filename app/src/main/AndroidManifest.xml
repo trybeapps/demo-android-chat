@@ -9,7 +9,7 @@
 		android:label="@string/app_name"
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme">
-		<activity android:name=".main.MainActivity">
+		<activity android:name="io.rapid.rapichat.ui.main.MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
 
 		<meta-data
 			android:name="io.rapid.apikey"
-			android:value="ZGVtby13cy1zZXJ2aWNlLnJhcGlkLmlv" />
+			android:value="MTQwdDAxZTFqNmRpZXN4Yy5hcHAtcmFwaWQuaW8=" />
 	</application>
 
 </manifest>

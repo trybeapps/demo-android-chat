@@ -1,4 +1,4 @@
-package io.rapid.rapichat.channel
+package io.rapid.rapichat.ui.channel
 
 
 interface ChannelListener {

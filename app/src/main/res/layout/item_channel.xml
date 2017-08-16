@@ -7,11 +7,11 @@
 
 		<variable
 			name="viewModel"
-			type="io.rapid.rapichat.main.ChannelItemViewModel" />
+			type="io.rapid.rapichat.ui.main.ChannelItemViewModel" />
 
 		<variable
 			name="listener"
-			type="io.rapid.rapichat.channel.ChannelListener" />
+			type="io.rapid.rapichat.ui.channel.ChannelListener" />
 	</data>
 
 

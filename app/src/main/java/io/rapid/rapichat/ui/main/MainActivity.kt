@@ -1,4 +1,4 @@
-package io.rapid.rapichat.main
+package io.rapid.rapichat.ui.main
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -6,9 +6,9 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.view.MenuItem
 import io.rapid.rapichat.BR
 import io.rapid.rapichat.R
-import io.rapid.rapichat.channel.ChannelFragment
-import io.rapid.rapichat.channel.ChannelListener
 import io.rapid.rapichat.databinding.ActivityMainBinding
+import io.rapid.rapichat.ui.channel.ChannelFragment
+import io.rapid.rapichat.ui.channel.ChannelListener
 import io.rapid.rapichat.utils.*
 import me.tatarka.bindingcollectionadapter2.ItemBinding
 
